@@ -1,55 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turdinazarov Asqar - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
     <div class="container">
-      <h1>Asqar Turdinazarov</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <header>
+            <nav>
+                <div class="logo">Turdinazarov Asqar</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Turdinazarov Asqar</h1>
+                    <p class="subtitle">Professional Profile</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="image.jpg" alt="Turdinazarov Asqar" class="profile-img">
+                    <div class="about-text">
+                        <p>Hello! My name is Asqar Turdinazarov, and I am from the beautiful city 
+                            of Samarkand, Uzbekistan. I am just starting my journey into the world 
+                            of programming and have developed a strong interest in Java. My dream 
+                            is to become a skilled backend developer and create amazing 
+                            software solutions. Through this blog, I will share my experiences, 
+                            learnings, and projects as I grow in this exciting field. Stay tuned!
+                        </p>
+                        <a href="#" class="btn">Download CV</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                        <p>Proficient in multiple programming languages and frameworks</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and interactive web applications</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Analytical thinking and strategic solution development</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3>Project Title</h3>
+                        <p>Brief description of the project and its technologies</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="project2.jpg" alt="Project 2">
+                        <h3>Project Title</h3>
+                        <p>Brief description of the project and its technologies</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Turdinazarov Asqar. All Rights Reserved.</p>
+        </footer>
     </div>
-  </header>
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am a passionate web developer skilled in creating modern and responsive websites.</p>
-    </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <p>Description of project 2.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:turdinazarovasqar@example.com">turdinazarovasqar@example.com</a></p>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Asqar Turdinazarov. All rights reserved.</p>
-    </div>
-  </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
